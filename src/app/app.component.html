@@ -1,0 +1,8 @@
+<div *ngIf="!showAlert">
+        Active Time!!!
+</div>
+<div class="alert" *ngIf="showAlert" (click)="resetAlert()">
+        This is an alert message after idle time.
+      </div>
+
+<router-outlet></router-outlet>
